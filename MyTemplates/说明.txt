@@ -1,0 +1,11 @@
+﻿将模板插件粘贴到以下路径中
+D:\xxx\Android\Android Studio\plugins\android\lib\templates
+重启studio可以快速创建模板
+
+所有模板都使用了ButterKnife控件注解
+
+1.带自定义BaseTitle的Activity；
+
+2.带自定义BaseTitle、TabLayout、ViewPager的Activity，会顺便创建ViewPager中的一个Fragment和布局；
+
+3.适用于ListView、GrideView的继承BaseAdapter的适配器及其ViewHolder和布局文件；

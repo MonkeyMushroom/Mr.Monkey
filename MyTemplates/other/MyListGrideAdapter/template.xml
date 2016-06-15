@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="7"
+    name="My List Gride Adapter"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates a new adapter extends BaseAdapter for a ListView or GrideView">
+
+    <category value="Adapter" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="adapterClass"
+        name="Adapter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${layoutToAdapter(adapterLayoutName)}"
+        default="MainAdapter"
+        help="The name of the adapter class to create" />
+
+    <parameter
+        id="adapterLayoutName"
+        name="Adapter Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${adapterToLayout(adapterClass)}"
+        default="adapter_main"
+        help="The name of the layout to create for the adapter" />
+		
+	<parameter
+        id="listName"
+        name="List Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="mList"
+        help="The name of the list to be adapter's data" />
+		
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_my_list_gride_adapter.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
