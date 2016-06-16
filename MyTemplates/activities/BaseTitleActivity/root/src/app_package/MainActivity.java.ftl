@@ -6,7 +6,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import com.monkey.zhuishu.R;
+import ${packageName}.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
