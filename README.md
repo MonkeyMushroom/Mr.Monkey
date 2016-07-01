@@ -1,2 +1,2 @@
 # Mr.Monkey
-my personal repository
+my android studio templates
